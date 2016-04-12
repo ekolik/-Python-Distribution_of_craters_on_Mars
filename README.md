@@ -15,7 +15,7 @@ From the data set we use the following columns (the description of these columns
 We will use these data for calculating the location and square area of the craters.
 
 ## Approach
-We will evaluate the distribution of craters by calculating and comparing the square acreages of craters separately on each of the 4 hemispheres of Mars: northern-western, northern-eastern, southern-western, and southern-eastern. To find the square acreage of craters on one hemisphere we first calculate and then sum up the square acreages of all craters with centers within this hemisphere.
+We will evaluate the distribution of craters by calculating and comparing the square acreages of craters separately on each of the 4 hemispheres of Mars: north-western, north-eastern, south-western, and south-eastern. To find the square acreage of craters on one hemisphere we first calculate and then sum up the square acreages of all craters with centers within this hemisphere.
 
 ## Literature review
 In order to discover if the question of the project has already been answered in other papers, the Internet was searched for the terms: "*mars crater facts*", "*mars crater distribution*", "*mars crater density*". The related sources that have been found and reviewed are listed is in the **Resources** section. 
@@ -23,7 +23,6 @@ In order to discover if the question of the project has already been answered in
 During the review it was discovered that the southern hemisphere of Mars contains more and larger craters than the northern. The southern hemisphere is older, and its surface wasn't significantly modified after the period of "heavy bombardment" by asteroids. On the contrary, the surface of the northern hemisphere is much younger and has likely been modified after the "bombardment" by volcanic activity. 
 
 No information have been found about the density of craters on western and eastern hemispheres. It might be caused by the absence of significant difference in this density on these hemispheres. The results of this project will give us some evidence. 
-
 ## Resources
 * https://en.wikipedia.org/wiki/List_of_craters_on_Mars;
 * https://en.wikipedia.org/wiki/Geology_of_Mars;
@@ -31,3 +30,17 @@ No information have been found about the density of craters on western and easte
 * http://www.space.com/47-mars-the-red-planet-fourth-planet-from-the-sun.html;
 * http://nineplanets.org/mars.html;
 * http://theplanets.org/mars/.
+
+## Workflow
+### Week 2
+There are the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/week2.py) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/week2_output.txt) for the Week 2 Assignment. During this work, the dataset was first downloaded and examined for the variables that are important for the project. Specifically, the following data were calculated:
+* the number and percentage of the craters that belong to each hemisphere;
+* the frequency distribution of the craters' diameters;
+* the sums of the craters' squared radii for each hemisphere.
+
+Based on the results of the calculations, the following observations were made:
+* the south-eastern hemisphere contains the biggest percentage of the craters, and the north-western - the smallest;
+* the sum of the craters' squared radii on the south-eastern hemisphere is the biggest, and on the north-western - the smallest;
+* almost half of all craters have a diameter equal to 1 km.
+
+These results and observations are important for the purpose of the project and will be used for the final conclusions.
