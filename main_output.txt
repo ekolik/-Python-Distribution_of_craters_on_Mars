@@ -1,0 +1,58 @@
+There are 384343 craters on Mars.
+
+The north-western hemisphere contains 62632 craters, or 16.3% of all craters.
+South-western: 111308 craters, or 28.96%.
+North-eastern: 88257 craters, or 22.96%.
+South-eastern: 122146 craters, or 31.78%.
+
+This is the frequency distribution of the craters' diameters. I-st column is the diameter length; II-nd - its frequency.
+DIAM_INT
+1           48.485337
+2           25.928923
+3            8.024083
+4            3.891836
+5            2.330991
+6            1.642803
+7            1.231452
+8            1.001709
+9            0.785496
+10           0.648639
+11           0.540923
+12           0.466510
+13           0.409790
+14           0.356192
+15           0.334597
+...
+327         0.00026
+340         0.00026
+341         0.00026
+344         0.00026
+359         0.00026
+376         0.00026
+401         0.00026
+408         0.00026
+427         0.00026
+446         0.00026
+467         0.00026
+513         0.00026
+624         0.00026
+1097        0.00026
+1164        0.00026
+Length: 221, dtype: float64
+
+This is the quartile split of the craters' diameters. I-st column contains the intervals of diameters' length;
+II-nd - the number of craters with the length of its diameter in the corresponding interval.
+DIAM_QUART
+(1.18, 1.53]       97609
+(1.53, 2.55]       94359
+(2.55, 1164.22]    96067
+[1, 1.18]          96308
+dtype: int64
+
+This is the sums of the craters' squared radii for each hemisphere. I-st column is the abbreviation of a hemisphere; II-nd - the indicated sum.
+HEMISPH
+ne         1467483.63
+nw          742859.95
+se         3307744.00
+sw         2790753.17
+Name: SQUARE_RADIUS, dtype: float64
