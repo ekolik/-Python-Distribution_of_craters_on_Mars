@@ -32,15 +32,16 @@ No information have been found about the density of craters on western and easte
 * http://theplanets.org/mars/.
 
 ## Workflow
-### Week 2
-There are the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/week2.py) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/week2_output.txt) for the Week 2 Assignment. During this work, the dataset was first downloaded and examined for the variables that are important for the project. Specifically, the following data were calculated:
+There are the current [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main.py) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main_output.txt). During the execution of the code, the dataset was first downloaded and examined for the variables that are important for the project. Specifically, the following data were calculated:
 * the number and percentage of the craters that belong to each hemisphere;
-* the frequency distribution of the craters' diameters;
+* the frequency distribution and quartile split of the craters' diameters;
 * the sums of the craters' squared radii for each hemisphere.
+
+Additionally, it was checked that all observations (all craters) have data about their coordinates and diameter's length. In other words, there are no missing data in these variables.
 
 Based on the results of the calculations, the following observations were made:
 * the south-eastern hemisphere contains the biggest percentage of the craters, and the north-western - the smallest;
 * the sum of the craters' squared radii on the south-eastern hemisphere is the biggest, and on the north-western - the smallest;
-* almost half of all craters have a diameter equal to 1 km.
+* almost half of all craters have a diameter equal to 1 km, and only two craters have a diameter longer than 1000 km.
 
 These results and observations are important for the purpose of the project and will be used for the final conclusions.
