@@ -32,7 +32,9 @@ No information have been found about the density of craters on western and easte
 * http://theplanets.org/mars/.
 
 ## Workflow
-There are the current [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main.py) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main_output.txt). During the execution of the code, the dataset was downloaded and examined for the variables that are important for the project. Firstly, it was checked that all observations (all craters) have data about their coordinates and diameter's length. In other words, there are no missing data in these variables. Then, the following data were calculated:
+There are the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main.py) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main_output.txt) that are made for the purpose of the project. 
+
+During the execution of the code, the dataset was downloaded and examined for the variables that are important for the project. Firstly, it was checked that all observations (all craters) have data about their coordinates and diameter's length. In other words, there are no missing data in these variables. Then, the following data were calculated:
 * the number and percentage of the craters that belong to each quadrant;
 * the sums of the craters' squared areas for each quadrant;
 * the descriptive statistics of the craters' squared areas.
@@ -52,6 +54,7 @@ To visualize the data, the following plots were created:
 ## Results and conclusions
 Examination of the plots led to the following conclusions:
 * The quadrants of Mars can be sorted by the increasing number of craters they contain in the following way: north-western, north-eastern, south-western, and south-eastern. This proves that, in particular, the southern hemisphere has more craters than the northern, and the eastern - more than western.
+* Not only the number of craters but their sizes also increase with the quadrants sorted in the way showed above (north-western, north-eastern, south-western, and south-eastern). For example, the south-eastern quadrant contains not only the biggest number of the craters but also most of the largest ones. Conversely, the north-western quadrant contains not only the smallest number of the craters but also most of the smallest ones.
 * The majority of the craters are located near the equator of Mars, just a little to its south.
-* The majority of the craters with the biggest squared area are located in the southern hemisphere, in its east-southern quadrant, to be precise.
-* Not only the number of craters but their sizes as well increase in the quadrants sorted in the way showed above (first bullet). For example, the south-eastern quadrant contains not only the biggest number of the craters but also most of the largest ones. Conversely, the north-western quadrant contains not only the smallest number of the craters but also most of the smallest ones.
+* The majority of the craters with the biggest squared area are located in the southern hemisphere (in its east-southern quadrant, to be precise).
+
