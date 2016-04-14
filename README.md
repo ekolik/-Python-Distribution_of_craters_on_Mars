@@ -15,7 +15,7 @@ From the data set we use the following columns (the description of these columns
 We will use these data for calculating the location and square area of the craters.
 
 ## Approach
-We will evaluate the distribution of craters by calculating and comparing the square acreages of craters separately on each of the 4 hemispheres of Mars: north-western, north-eastern, south-western, and south-eastern. To find the square acreage of craters on one hemisphere we first calculate and then sum up the square acreages of all craters with centers within this hemisphere.
+We will evaluate the distribution of craters by calculating and comparing the square acreages of craters separately on each of the 4 quadrants of Mars: north-western, north-eastern, south-western, and south-eastern. To find the square acreage of craters on one quadrant we first calculate and then sum up the square acreages of all craters with centers within this quadrant.
 
 ## Literature review
 In order to discover if the question of the project has already been answered in other papers, the Internet was searched for the terms: "*mars crater facts*", "*mars crater distribution*", "*mars crater density*". The related sources that have been found and reviewed are listed is in the **Resources** section. 
@@ -32,16 +32,26 @@ No information have been found about the density of craters on western and easte
 * http://theplanets.org/mars/.
 
 ## Workflow
-There are the current [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main.py) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main_output.txt). During the execution of the code, the dataset was first downloaded and examined for the variables that are important for the project. Specifically, the following data were calculated:
-* the number and percentage of the craters that belong to each hemisphere;
-* the frequency distribution and quartile split of the craters' diameters;
-* the sums of the craters' squared radii for each hemisphere.
-
-Additionally, it was checked that all observations (all craters) have data about their coordinates and diameter's length. In other words, there are no missing data in these variables.
+There are the current [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main.py) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/main_output.txt). During the execution of the code, the dataset was downloaded and examined for the variables that are important for the project. Firstly, it was checked that all observations (all craters) have data about their coordinates and diameter's length. In other words, there are no missing data in these variables. Then, the following data were calculated:
+* the number and percentage of the craters that belong to each quadrant;
+* the sums of the craters' squared areas for each quadrant;
+* the descriptive statistics of the craters' squared areas.
 
 Based on the results of the calculations, the following observations were made:
-* the south-eastern hemisphere contains the biggest percentage of the craters, and the north-western - the smallest;
-* the sum of the craters' squared radii on the south-eastern hemisphere is the biggest, and on the north-western - the smallest;
+* the south-eastern quadrant contains the biggest percentage of the craters, and the north-western - the smallest;
+* the sum of the craters' squared radii on the south-eastern quadrant is the biggest, and on the north-western - the smallest;
 * almost half of all craters have a diameter equal to 1 km, and only two craters have a diameter longer than 1000 km.
 
-These results and observations are important for the purpose of the project and will be used for the final conclusions.
+To visualize the data, the following plots were created:
+* the counts of the craters on each quadrant ([view](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/craters_density.png));
+* the distribution of the craters from south to north ([view](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/hist_latitude.png));
+* the distribution of the craters from west to east ([view](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/hist_longitude.png));
+* the map of the craters with the squared area equal to or greater than the sum of the mean of the squared areas of all craters plus one standard deviation from that mean ([view](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/crater_map.png));
+* the categorical plot of the squared areas of the craters per each quadrant ([view](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/sizes_distr.png)). 
+
+## Results and conclusions
+Examination of the plots led to the following conclusions:
+* The quadrants of Mars can be sorted by the increasing number of craters they contain in the following way: north-western, north-eastern, south-western, and south-eastern. This proves that, in particular, the southern hemisphere has more craters than the northern, and the eastern - more than western.
+* The majority of the craters are located near the equator of Mars, just a little to its south.
+* The majority of the craters with the biggest squared area are located in the southern hemisphere, in its east-southern quadrant, to be precise.
+* Not only the number of craters but their sizes as well increase in the quadrants sorted in the way showed above (first bullet). For example, the south-eastern quadrant contains not only the biggest number of the craters but also most of the largest ones. Conversely, the north-western quadrant contains not only the smallest number of the craters but also most of the smallest ones.
