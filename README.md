@@ -58,3 +58,4 @@ Examination of the plots led to the following conclusions:
 * The majority of the craters are located near the equator of Mars, just a little to its south.
 * The majority of the craters with the biggest squared area are located in the southern hemisphere (in its east-southern quadrant, to be precise).
 
+The exploration of this topic is continued in the [Data Analysis](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Data_analysis.md) section.
