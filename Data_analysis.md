@@ -24,3 +24,18 @@ That is why it is important to look at both a scatterplot and a correlation coef
 There is the main code of the program (in Python):
 ![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/code_screenshot_week3.png)
 
+### Exploring Statistical Interactions
+
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-0layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-1layer.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-2layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-3layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-4layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-5layers.png)
+
+There is the main code of the program (in Python):
+![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/code_screenshot_week4.png)
+
+There is the output of the program:
+
+![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/code_output_week4.png)
