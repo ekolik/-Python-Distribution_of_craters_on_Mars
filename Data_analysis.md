@@ -26,12 +26,7 @@ There is the main code of the program (in Python):
 
 ### Exploring Statistical Interactions
 
-![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-0layers.png)
-![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-1layer.png)
-![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-2layers.png)
-![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-3layers.png)
-![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-4layers.png)
-![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-5layers.png)
+Here, we check if the association between the crater's diameter (quantitative explanatory variable) and its depth (quantitative response variable) is linear for craters with the same number of layers. In other words, we divide the data into 6 groups by number of layers in craters: 0, 1, 2, 3, 4, and 5 layers, and then calculate a Pearson correlation coefficient (diameter vs depth) for each group.
 
 There is the main code of the program (in Python):
 ![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/code_screenshot_week4.png)
@@ -39,3 +34,19 @@ There is the main code of the program (in Python):
 There is the output of the program:
 
 ![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/code_output_week4.png)
+
+The results of the calculations mean that there is a positive linear relationship between the variables for each group. This might indicate that the number of layers doesn't influence the relationship between the diameter and depth of a crater. However, the look at the scatter-plots for each of the groups (shown below) reveals the following:
+* there is no distinctive linear relationship between the diameter and depth for craters with no layers; 
+* the relationship frogressively becomes more distinctive (positive and linear) for craters with 1, 2, and 3 layers;
+* the relationship is strongly positive and linear for craters with 4 layers;
+* there is not enough samples with 5 layers to make conclusions about the relationship.
+
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-0layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-1layer.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-2layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-3layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-4layers.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-5layers.png)
+
+Therefore, the number of layers **does** influence the relationship between the diameter and depth of a crater: the more layers in a crater, the more linear the relationship is.
+
