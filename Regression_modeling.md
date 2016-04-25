@@ -19,3 +19,5 @@ Here are the measures of the data collected:
 * Depth of a crater is in km. It is equal to the average elevation of each of the manually determined 5 points along (or inside) the crater rim.
 * Number of layers is in the 0-to-5 range. It is equal to the maximum number of cohesive layers in any reliably identified azimuthal direction.
 * Crater ejecta is described by categorical codes. The codes indicate if the ejecta is hummocky with short lobes, smooth with short lobes, hummocky with splash, or smooth with splash. The ejecta shape might be: pin-cushion, pedestal, sandbar, bumblebee, butterfly, pseudo-butterfly, or rectangular.
+
+As one part of my work, I evaluate the distribution of craters by calculating and comparing the square acreages of craters separately on each of the 4 quadrants of Mars: north-western, north-eastern, south-western, and south-eastern. To find the square acreage of craters on one quadrant, I first calculate and then sum up the square acreages of all craters with centers within this quadrant.
