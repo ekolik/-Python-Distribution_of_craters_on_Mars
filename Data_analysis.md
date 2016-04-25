@@ -48,5 +48,5 @@ The results of the calculations mean that there is a positive linear relationshi
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-4layers.png)
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/data_analysis/diam_vs_depth-5layers.png)
 
-Therefore, the number of layers **does** influence the relationship between the diameter and depth of a crater: the more layers are in a crater, the more more pronounced the linear relationship is.
+Therefore, the number of layers **does** influence the relationship between the diameter and depth of a crater: the more layers are in a crater, the more pronounced the linear relationship is.
 
