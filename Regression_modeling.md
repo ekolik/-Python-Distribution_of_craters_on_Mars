@@ -7,7 +7,7 @@ The data is taken from the Mars Craters Study ([Mars Crater codebook (.pdf)](htt
 
 *Procedure*
 
-The data was collected by a multi-stage process of identification and analysis conducted by Stuart Robbins. According to his [paper](http://about.sjrdesign.net/research_mars.html#crater_database_mars), his work involved examining the global daytime thermal infrared [mosaic of Mars](http://www.mars.asu.edu/data/thm_dir/), which was collected during [THEMIS mission](http://www.nasa.gov/mission_pages/themis/mission/index.html), and marking every resolved crater in this mosaic. *The researcher allowed ~500m spacing between point resolution and looked for ≥ 5 points along a crater rim which limits the diameter to ~700-800 meters. He estimates the statistical completeness to be at ~1.0 km.* *
+The data was collected by a multi-stage process of identification and analysis conducted by Stuart Robbins in 2009. According to his [paper](http://about.sjrdesign.net/research_mars.html#crater_database_mars), his work involved examining the global daytime thermal infrared [mosaic of Mars](http://www.mars.asu.edu/data/thm_dir/), which was collected during [THEMIS mission](http://www.nasa.gov/mission_pages/themis/mission/index.html), and marking every resolved crater in this mosaic. *The researcher allowed ~500m spacing between point resolution and looked for ≥ 5 points along a crater rim which limits the diameter to ~700-800 meters. He estimates the statistical completeness to be at ~1.0 km.* *
 
 \* *It looks confusing, but it's the most comprehensible explanation I was able to find. :)*
 
