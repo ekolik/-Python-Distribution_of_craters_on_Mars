@@ -21,3 +21,18 @@ Here are the measures of the data collected:
 * Crater ejecta is described by categorical codes. The codes indicate if the ejecta is hummocky with short lobes, smooth with short lobes, hummocky with splash, or smooth with splash. The ejecta shape might be: pin-cushion, pedestal, sandbar, bumblebee, butterfly, pseudo-butterfly, or rectangular.
 
 As one part of my work, I evaluate the distribution of craters by calculating and comparing the square acreages of craters separately on each of the 4 quadrants of Mars: north-western, north-eastern, south-western, and south-eastern. To find the square acreage of craters on one quadrant, I first calculate and then sum up the square acreages of all craters with centers within this quadrant.
+
+### Basics of Linear Regression
+
+As the first step in testing the association between the crater's depth (quantitative explanatory variable) and its number of layers (quantitative response variable), the scatter-plot was created:
+![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/depth-vs-numberlayers.png)
+
+The plot reveals positive association between the variables: the deeper a crater, the more layers it has.
+
+Before testing a linear regression model, the explanatory variable (depth of a crater) was centered by subtracting its mean (equal to `~ 0.076`) from each observed value of depth. The mean of the variable after centering is equal to `~ -2.557e-14`, which is very close to `0`. This is the output of the linear regression model that was created:
+
+![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/output_week2.png)
+
+The output tells us that the model was constructed using `384343` observations, the R-squared number is `0.191` (in other words, 19% of the variability in the number of layers in a crater is described by variation in the crater's depth), F = `9.089e+04` with p = `0.00` (which mean that the variables are significantly associated). The regression coefficients of the model are: intercept = `0.0648` and slope = `0.6019`, which means that we can relate our variables by the formula: <br /> `number of layers = 0.0648 + 0.6019*depth`.
+
+There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/regression_modeling.py) of the program (in Python).
