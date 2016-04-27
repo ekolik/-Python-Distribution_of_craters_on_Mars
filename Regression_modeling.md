@@ -36,3 +36,5 @@ Before testing a linear regression model, the explanatory variable (depth of a c
 The output tells us that the model was constructed using `384343` observations, the R-squared number is `0.191` (in other words, 19% of the variability in the number of layers in a crater is described by variation in the crater's depth), F = `9.089e+04` with p = `0.00` (which mean that the variables are significantly associated). The regression coefficients of the model are: intercept = `0.0648` and slope = `0.6019`, which means that we can relate our variables by the formula: <br /> `number of layers = 0.0648 + 0.6019*depth`.
 
 There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/regression_modeling.py) of the program (in Python).
+
+The exploration of this topic is continued in the [Machine Learning](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Machine_learning.md) section.
