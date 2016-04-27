@@ -50,3 +50,5 @@ The results of the calculations mean that there is a positive linear relationshi
 
 Therefore, the number of layers **does** influence the relationship between the diameter and depth of a crater: the more layers are in a crater, the more pronounced the linear relationship is.
 
+The exploration of this topic is continued in the [Regression Modeling](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Regression_modeling.md) section.
+
