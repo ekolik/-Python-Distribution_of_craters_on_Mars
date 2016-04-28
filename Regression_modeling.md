@@ -39,29 +39,29 @@ There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on
 
 ### Multiple Regression
 
+There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/regression_modeling.py) of the program (in Python) and its [output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/output_week3.txt).
 
 We have already addressed the association between the crater's diameter (quantitative explanatory variable) and its depth (quantitative response variable) in the Data Analysis section while studying [Pearson Correlation] (https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Data_analysis.md#pearson-correlation). There we have noticed that the relationship between the variables is positive, but not linear. Therefore, now we address this question using polynomial (second order) regression. Firstly, we run the second order fit line for the data:
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/polynom.png)
 
-This line is again not very accurate in describing the data, but let's see the results of the polynomial regression analysis in comparison to the linear regression analysis. (Before performing the analysis we center both of the variables.)center quantitative IVs for regression analysis
-linear regression analysis
-polynomial regression analysis
-adding another explanatory variable
-[output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/output_week3.txt)
+This line is again not very accurate in describing the data, but let's see the results of the polynomial regression analysis in comparison to the linear regression analysis. (Before performing the analysis we center both of the variables by subtracting their means.) There are the [results](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/output_week3.txt) of the analysis. The results of the linear regression indicate a significant, positive association between the variables with `34.4%` of the variability in the crater's depth described by variation in its diameter. The results of the polynomial regression indicate a significant, positive, concave-shaped association between the variables with `42.6%` of the variability in the crater's depth described by variation in its diameter. In other words, the concave pattern observed in scatter plot is statistically significant, and there is an increase in the R-squared value.
 
-q-q plot for normality
+We continue examining the relationship between the variables by adding another explanatory variable: number of layers in a crater. After running [multivariate regression](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/output_week3.txt), we observe that the diameter (initial explanatory variable, coefficient = `0.0182`) remains significantly (p-value = `0`) associated with the depth (response variable, intercept = `0.0774`) after controlling for the number of layers (second explanatory variable, coefficient = `0.2486`), and the number of layers is positively significantly (p-value = `0`) associated with the depth after controlling for the diameter. In other words, the number of layers is not confounder in this relationship. Moreover, this multivariate regression brings us additional increase in R-squared value: now `54%` of the variability in the crater's depth is described by variation in its diameter and the number of layers.
+
+Before making any conclusions, we examine the diagnostic plots:
+* The Q-Q plot shows that the residuals follow the fit line only in the middle, but highly deviate at the lower and higher quantiles. This indicated that the residuals do not follow normal distribution, and the association that we built is not proper. There must be other explanatory variables that should be considered in the model for its improvement.
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/qq.png)
 
-plot of residuals
+* The plot of residuals again shows that that the model is a poor fit to the data because much more than 5% of the observations have standardized residuals with an absolute value bigger than 2. It means that the important explanatory variables were not used for the model fit.
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/resid_plot.png)
 
-diagnostic plots
+* Other diagnostic plots also show that the residuals are small neither for the number of layers nor for the diameter variables. The model predicts poorly for most of the cases, but it is especially bad for the observations with small number of layers and for the observations with big diameters. The partial regression plots show that the residuals follow a linear patter neither for the number of layers nor for the diameter. This means the weak association with the response variable of one explanatory variable after controlling for the other.
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/num_layers_diagnos.png)
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/diam_diagnos.png)
 
-leverage plot using only a data subset
+* The leverage plot (used only a subset of the data for plotting) shows that a big number of the observations are outliers (they have residuals greater than 2 or less than -2.), and even though they have small leverage values, they do have an undue influence on the estimation of the regression model. There are also quite a few cases with higher than average leverage; in particular, there is one observation (marked `1`) that is both an outlier and have a high leverage, and it is very dramatic in its undue influence on the estimation. 
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/leverage.png)
 
-
+Therefore, there is a very important lesson learned here: do not rely solely on the results of the regression models, but examine very carefully the diagnostic plots. These plots provide very essential information about the quality of the model and thus may undermine the correctness of the model. In our case, we conclude that the model we've built here is not a proper model for the data. 
 
 The exploration of this topic is continued in the [Machine Learning](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Machine_learning.md) section.
