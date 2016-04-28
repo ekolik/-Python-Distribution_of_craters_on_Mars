@@ -37,4 +37,31 @@ The output tells us that the model was constructed using `384343` observations, 
 
 There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/regression_modeling.py) of the program (in Python).
 
+### Multiple Regression
+
+
+We have already addressed the association between the crater's diameter (quantitative explanatory variable) and its depth (quantitative response variable) in the Data Analysis section while studying [Pearson Correlation] (https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Data_analysis.md#pearson-correlation). There we have noticed that the relationship between the variables is positive, but not linear. Therefore, now we address this question using polynomial (second order) regression. Firstly, we run the second order fit line for the data:
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/polynom.png)
+
+This line is again not very accurate in describing the data, but let's see the results of the polynomial regression analysis in comparison to the linear regression analysis. (Before performing the analysis we center both of the variables.)center quantitative IVs for regression analysis
+linear regression analysis
+polynomial regression analysis
+adding another explanatory variable
+[output](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/output_week3.txt)
+
+q-q plot for normality
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/qq.png)
+
+plot of residuals
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/resid_plot.png)
+
+diagnostic plots
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/num_layers_diagnos.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/diam_diagnos.png)
+
+leverage plot using only a data subset
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/leverage.png)
+
+
+
 The exploration of this topic is continued in the [Machine Learning](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Machine_learning.md) section.
