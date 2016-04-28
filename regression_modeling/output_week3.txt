@@ -1,0 +1,100 @@
+       DIAM_CIRCLE_IMAGE  NUMBER_LAYERS
+count       3.843430e+05   3.843430e+05
+mean       -1.444517e-12   8.171994e-15
+std         8.591993e+00   3.048889e-01
+min        -2.556686e+00  -6.483532e-02
+25%        -2.376686e+00  -6.483532e-02
+50%        -2.026686e+00  -6.483532e-02
+75%        -1.006686e+00  -6.483532e-02
+max         1.160663e+03   4.935165e+00
+
+[8 rows x 2 columns]
+
+OLS regression model for the association between crater's diameter and depth
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     DEPTH_RIMFLOOR_TOPOG   R-squared:                       0.344
+Model:                              OLS   Adj. R-squared:                  0.344
+Method:                   Least Squares   F-statistic:                 2.018e+05
+Date:                  Thu, 28 Apr 2016   Prob (F-statistic):               0.00
+Time:                          09:30:43   Log-Likelihood:             1.1503e+05
+No. Observations:                384343   AIC:                        -2.301e+05
+Df Residuals:                    384341   BIC:                        -2.300e+05
+Df Model:                             1                                         
+Covariance Type:              nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [95.0% Conf. Int.]
+-------------------------------------------------------------------------------------
+Intercept             0.0758      0.000    262.096      0.000         0.075     0.076
+DIAM_CIRCLE_IMAGE     0.0151   3.37e-05    449.169      0.000         0.015     0.015
+==============================================================================
+Omnibus:                   390327.615   Durbin-Watson:                   1.276
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):       4086668077.221
+Skew:                          -3.506   Prob(JB):                         0.00
+Kurtosis:                     508.113   Cond. No.                         8.59
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+OLS polynomial regression model for the association between crater's diameter and depth
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     DEPTH_RIMFLOOR_TOPOG   R-squared:                       0.426
+Model:                              OLS   Adj. R-squared:                  0.426
+Method:                   Least Squares   F-statistic:                 1.429e+05
+Date:                  Thu, 28 Apr 2016   Prob (F-statistic):               0.00
+Time:                          09:30:44   Log-Likelihood:             1.4077e+05
+No. Observations:                384343   AIC:                        -2.815e+05
+Df Residuals:                    384340   BIC:                        -2.815e+05
+Df Model:                             2                                         
+Covariance Type:              nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [95.0% Conf. Int.]
+---------------------------------------------------------------------------------------------
+Intercept                     0.0776      0.000    286.535      0.000         0.077     0.078
+DIAM_CIRCLE_IMAGE             0.0199   3.74e-05    531.037      0.000         0.020     0.020
+I(DIAM_CIRCLE_IMAGE ** 2) -2.342e-05   9.98e-08   -234.719      0.000     -2.36e-05 -2.32e-05
+==============================================================================
+Omnibus:                   234907.160   Durbin-Watson:                   1.384
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         49760401.931
+Skew:                           1.862   Prob(JB):                         0.00
+Kurtosis:                      58.618   Cond. No.                     3.22e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.22e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+OLS polynomial and multivariate regression model
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     DEPTH_RIMFLOOR_TOPOG   R-squared:                       0.540
+Model:                              OLS   Adj. R-squared:                  0.540
+Method:                   Least Squares   F-statistic:                 1.507e+05
+Date:                  Thu, 28 Apr 2016   Prob (F-statistic):               0.00
+Time:                          09:30:45   Log-Likelihood:             1.8337e+05
+No. Observations:                384343   AIC:                        -3.667e+05
+Df Residuals:                    384339   BIC:                        -3.667e+05
+Df Model:                             3                                         
+Covariance Type:              nonrobust                                         
+=============================================================================================
+                                coef    std err          t      P>|t|      [95.0% Conf. Int.]
+---------------------------------------------------------------------------------------------
+Intercept                     0.0774      0.000    319.384      0.000         0.077     0.078
+DIAM_CIRCLE_IMAGE             0.0182   3.39e-05    536.109      0.000         0.018     0.018
+I(DIAM_CIRCLE_IMAGE ** 2) -2.102e-05   8.97e-08   -234.446      0.000     -2.12e-05 -2.08e-05
+NUMBER_LAYERS                 0.2486      0.001    308.819      0.000         0.247     0.250
+==============================================================================
+Omnibus:                   210482.291   Durbin-Watson:                   1.514
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         49973776.420
+Skew:                           1.497   Prob(JB):                         0.00
+Kurtosis:                      58.782   Cond. No.                     1.07e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.07e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
