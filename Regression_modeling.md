@@ -64,4 +64,21 @@ Before making any conclusions, we examine the diagnostic plots:
 
 Therefore, there is a very important lesson learned here: do not rely solely on the results of the regression models, but examine very carefully the diagnostic plots. These plots provide very essential information about the quality of the model and thus may undermine the correctness of the model. In our case, we conclude that the model we've built here is not a proper model for the data. 
 
+### Logistic Regression
+
+Here we examine the association between crater's depth and diameter (categorical explanatory variables), and its number of layers (categorical response variable). We use the following rules to recode the variables in categorical values: 
+* *presence of many layers*: `0` if a crater has fewer than 2 layers, `1` if a crater has more than or equal to 2 layers;
+* *presence of depth*: `0` if crater's depth is smaller than or equal to 0, `1` if crater's depth is larger than 0;
+* *presence of large diameter*: `0` if crater's diameter is smaller than 2, `1` if crater's diameter is larger than or equal to 2.
+
+Here are the results of the logistic regression model and the confidence intervals for the explanatory variables:
+
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/output_week4.png)
+
+The results tell us that both of the explanatory variables are positively and significantly (both p-values = 0) associated with the response variable. None of these variables is a confounder. We can say that, after adjusting for the *presence of large diameter* variable, craters with depth > 0 are 25 times more likely to have >= 2 layers than those with depth <= 0 (`OR = 25.094796, 95% CI = [21.263073, 29.617017]`). Similarly, after adjusting for the *presence of depth* variable, craters with diameter >= 2 are 20 times more likely to have >= 2 layers than those with diameter < 2 (`OR = 20.497464, 95% CI = [14.645286, 28.688143]`).
+
+Therefore, the results support the assumption that both the crater's depth and diameter are positively associated with the number of layers in a crater.
+
+There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/regression_modeling/regression_modeling.py) of the program (in Python).
+
 The exploration of this topic is continued in the [Machine Learning](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/Machine_learning.md) section.
