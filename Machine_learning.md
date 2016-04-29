@@ -18,3 +18,16 @@ The longitude was the first variable to separate the sample into two subgroups, 
  
 This is the main code of the program (in Python):
 ![alt tag](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/Screenshot_of_code.png)
+
+### Random Forests
+
+Random forest analysis was performed to evaluate the importance of the crater's diameter and depth (quantitative explanatory variables) in predicting the number of layers in a crater (binary target variable: more than/equal to 2 layers or less than 2 layers). 60% of the sample were used for the training, and 40% - for testing. Initially, the random forest model was created with `25` trees. Here are the results of the training:
+
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/output_week2.png)
+
+We can see that the diameter of a crater has very high relative importance score, and, therefore, more important in predicting the number of layers than the depth of the crater. I find this result surprising.
+
+Then, we trained the random forest with different numbers of trees (1-10) to see the effect of the number on the accuracy of the prediction. The following plot indicates that the subsequent growing of number of trees adds little to the overall accuracy of the forest; moreover, the forest with just 2 trees has the highest accuracy: `0.9855`.
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/n_trees_vs_accuracy.png)
+
+There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/machine_learning.py) of the program (in Python).
