@@ -1,0 +1,68 @@
+Clustering variable means by cluster:
+          index  LATITUDE_CIRCLE_IMAGE  LONGITUDE_CIRCLE_IMAGE  \
+cluster                                                          
+0        202269              -0.166481                0.065400   
+1        171131               0.372434                0.654545   
+2        218251              -0.460758               -0.856151   
+
+         DIAM_CIRCLE_IMAGE  DEPTH_RIMFLOOR_TOPOG  
+cluster                                           
+0                 2.429295              3.233076  
+1                -0.145217             -0.186402  
+2                -0.148048             -0.205601  
+
+[3 rows x 5 columns]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          NUMBER_LAYERS   R-squared:                       0.123
+Model:                            OLS   Adj. R-squared:                  0.123
+Method:                 Least Squares   F-statistic:                 1.886e+04
+Date:                Tue, 03 May 2016   Prob (F-statistic):               0.00
+Time:                        15:56:26   Log-Likelihood:                -44774.
+No. Observations:              269040   AIC:                         8.955e+04
+Df Residuals:                  269037   BIC:                         8.959e+04
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [95.0% Conf. Int.]
+-----------------------------------------------------------------------------------
+Intercept           0.4986      0.002    216.742      0.000         0.494     0.503
+C(cluster)[T.1]    -0.4575      0.002   -188.932      0.000        -0.462    -0.453
+C(cluster)[T.2]    -0.4633      0.002   -188.650      0.000        -0.468    -0.458
+==============================================================================
+Omnibus:                   263133.404   Durbin-Watson:                   2.008
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         13286001.908
+Skew:                           4.866   Prob(JB):                         0.00
+Kurtosis:                      36.022   Cond. No.                         8.87
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Means for number of layers by cluster:
+         NUMBER_LAYERS
+cluster               
+0             0.498607
+1             0.041131
+2             0.035322
+
+[3 rows x 1 columns]
+
+Standard deviations for number of layers by cluster:
+         NUMBER_LAYERS
+cluster               
+0             0.788978
+1             0.232035
+2             0.205421
+
+[3 rows x 1 columns]
+Multiple Comparison of Means - Tukey HSD,FWER=0.05
+=============================================
+group1 group2 meandiff  lower   upper  reject
+---------------------------------------------
+  0      1    -0.4575  -0.4632 -0.4518  True 
+  0      2    -0.4633   -0.469 -0.4575  True 
+  1      2    -0.0058  -0.0085 -0.0031  True 
+---------------------------------------------
+
+
