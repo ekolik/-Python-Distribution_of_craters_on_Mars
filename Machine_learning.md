@@ -38,10 +38,11 @@ A lasso regression analysis was conducted to identify a subset of predictor vari
 
 Data were randomly split into a training set (70% of the observations) and a test set (30%). The least angle regression algorithm with k=10 fold cross validation was used to estimate the lasso regression model in the training set, and the model was validated using the test set. The change in the cross validation mean squared error at each step was used to identify the best subset of predictor variables.
 
-![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/Lasso_mse.png) ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/Lasso_coefs.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/Lasso_mse.png)
 
 All 4 predictor variables were retained in the selected model. The results of the training indicate the crater's depth as the predictor variable most strongly and positively associated with the number of layers. Other variables have very small coefficients and, therefore, might be considered not very influential. Mean squared error and R-squared values prove the model being robust for testing on new examples. The predictors account for 21% of the variance in the target variable.
 
 ![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/output_week3.png)
+![](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/Lasso_coefs.png)
 
 There is the [code](https://github.com/ekolik/-Python-Distribution_of_craters_on_Mars/blob/master/machine_learning/machine_learning.py) of the program (in Python).
