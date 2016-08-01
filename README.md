@@ -1,5 +1,5 @@
 # -Python-Distribution-of-craters-on-Mars
-Project for Data Management and Visualization on Coursera
+Project for Analysis and Interpretation on Coursera
 
 ## Introduction
 There are hundreds of thousands of impact craters on Mars, and they are essential to understanding the modification events on Mars and its surface ages. Around 4 billion years ago Mars was heavily bombarded by asteroids, comets, and proto-planets. Let's assume that these celestial bodies had been attacking all parts of the surface of Mars evenly, with the same frequency. This results in craters being evenly distributed over the surface of Mars. We know that Mars wasn't heavily attacked by celestial bodies since that time, but there are volcanoes on Mars, which could have erupted with the resulting lava covering up some of the craters. Had it happened? In this project we try to understand it. So, the goal of this research is to get the general idea of the craters' distribution on the surface of Mars. It is not important to discover all the details about this distribution, but it is interesting to know if, for example, the craters are concentrated in one part of Mars. If it is true, then we can suggest that this part is very old, and other parts are younger and have more active volcanoes (which have covered the craters).  
